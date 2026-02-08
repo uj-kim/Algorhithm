@@ -24,7 +24,6 @@ def solution(N, stages):
     answer.sort(key=lambda x: (-x[1], x[0]))
         
     for j in answer:
-        a, b = j
-        real_answer.append(a)
+        real_answer.append(j[0])
     return(real_answer)
         
